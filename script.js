@@ -1,13 +1,5 @@
+// Função para o botão de saída de emergência
 function sairRapidamente() {
-    window.location.replace("https://www.google.com");
+    // O replace apaga o histórico da página atual, dificultando voltar nela pela seta do navegador
+    window.location.replace('https://www.google.com.br');
 }
-
-// Clique no botão
-document.getElementById("btn-sair").addEventListener("click", sairRapidamente);
-
-// Tecla ESC
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        sairRapidamente();
-    }
-});

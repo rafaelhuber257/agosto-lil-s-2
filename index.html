@@ -4,7 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conexão Segura: Pelos Direitos Delas</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfbfd;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #6b21a8; /* Roxo escuro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn-emergencia {
+            background-color: #dc2626; /* Vermelho alerta */
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-emergencia:hover {
+            background-color: #b91c1c;
+        }
+
+        /* Banner Principal (Hero) */
+        .hero {
+            background-color: #f3e8ff; /* Lilás claro */
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .imagem-hero {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Conteúdo Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #6b21a8;
+            border-bottom: 3px solid #f3e8ff;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .imagem-secao {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        .btn-saida {
+            background-color: #4b5563; 
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: background 0.3s;
+            font-size: 1.1em;
+        }
+
+        .btn-saida:hover {
+            background-color: #111827;
+        }
+    </style>
 </head>
 <body>
 
@@ -79,9 +198,14 @@
         </button>
         <p><small>O botão acima fecha este site e abre o Google instantaneamente por segurança.</small></p>
         <p>Nome: Rafael Huber</p>
-        <p>Colégio Estadual do Campo Castelo Branco</p> <!-- Colégio adicionado aqui -->
+        <p>Colégio Estadual do Campo Castelo Branco</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Função para o botão de saída de emergência
+        function sairRapidamente() {
+            window.location.replace('https://www.google.com.br');
+        }
+    </script>
 </body>
 </html>
